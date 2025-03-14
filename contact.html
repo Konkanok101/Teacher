@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            height: 60px;
+        }
+
+        /* แถบเมนู */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg, #005A9C, #003F6E);  /* เพิ่มสีพื้นหลัง */
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #007ACC;  /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์ */
+            transform: scale(1.1);  /* ขยายขนาดลิงก์ */
+        }
+
+        nav a:hover {
+            background-color: #007ACC;
+            transform: scale(1.1);
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007ACC, #005A9C);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.5rem;
+        }
+
+        /* ส่วนของติดต่อ */
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .team-member {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            margin: 10px 0;
+            color: #007ACC;
+            font-size: 1.2rem;
+        }
+
+        .team-member p {
+            color: #333;
+            font-size: 1rem;
+            margin: 5px 0;
+            text-align: left; /* ข้อความชิดซ้าย */
+        }
+
+        footer {
+            text-align: center;
+            background: linear-gradient(90deg, #007ACC, #005A9C);
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px; /* ขยายความกว้าง */
+    height: 70px; /* ขยายความสูง */
+    background-color: #007ACC;
+    color: #fff;
+    font-size: 30px; /* ขยายขนาดไอคอน */
+    text-align: center;
+    line-height: 70px; /* ทำให้ไอคอนอยู่ตรงกลาง */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    z-index: 9999;
+    }
+
+    #backToTop.show {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    #backToTop:hover {
+        background-color: #005A9C;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Nrru.png" alt="Logo">
+        <h1>ติดต่อเรา</h1>
+        <p>พบกับสมาชิกในทีมของเรา</p>
+    </header>
+
+    <!-- แถบเมนู -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> หน้าแรก</a>
+        <a href="teacher.html"><i class="fas fa-chalkboard-teacher"></i> จรรยาบรรณครู</a>
+        <a href="ethics.html"><i class="fas fa-book"></i> คุณธรรม จริยธรรมครู</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> ติดต่อเรา</a>
+    </nav>
+
+    <!-- ส่วนของสมาชิก -->
+    <div class="team-container">
+        <!-- สมาชิกที่ 1 -->
+        <div class="team-member">
+            <img src="101.jpg" alt="Member 1">
+            <h3>นางสาวกรกนก ตวยกระโทก</h3>
+            <p>เบอร์โทร: 0967870240</p>
+            <p>อีเมล: 6540108101@nrru.ac.th</p>
+            <p>Line: 0629039640</p>
+            <p>Facebook: Konkanok Tuaikrathok</p>
+        </div>
+
+        <!-- สมาชิกที่ 2 -->
+        <div class="team-member">
+            <img src="106.jpeg" alt="Member 2">
+            <h3>นางสาวตันหยง เกียรติโคกกรวด</h3>
+            <p>เบอร์โทร: 0924592176</p>
+            <p>อีเมล: 6540108106@nrru.ac.th</p>
+            <p>Line: 0650914540</p>
+            <p>Facebook: ตันหยง เกียรติโคกกรวด</p>
+        </div>
+
+        <!-- สมาชิกที่ 3 -->
+        <div class="team-member">
+            <img src="113.jpeg" alt="Member 3">
+            <h3>นางสาวศศิภา เหมือนขุนทด</h3>
+            <p>เบอร์โทร: 0992410718</p>
+            <p>อีเมล: 6540108113@nrru.ac.th</p>
+            <p>Line: 0621075809</p>
+            <p>Facebook: ศศิภา เหมือนขุนทด</p>
+        </div>
+
+        <!-- สมาชิกที่ 4 -->
+        <div class="team-member">
+            <img src="201.jpeg" alt="Member 4">
+            <h3>นางสาวจิตติมา ชะวางกลาง</h3>
+            <p>เบอร์โทร: 0645620463</p>
+            <p>อีเมล: 6540108201@nrru.ac.th</p>
+            <p>Line: Weed_23</p>
+            <p>Facebook: Jittima JP</p>
+        </div>
+
+        <!-- สมาชิกที่ 5 -->
+        <div class="team-member">
+            <img src="203.jpeg" alt="Member 5">
+            <h3>นางสาวซารีฟะห์ อาบูเดร์</h3>
+            <p>เบอร์โทร: 0629925821</p>
+            <p>อีเมล: 6540108203@nrru.ac.th</p>
+            <p>Line: puttt_2546</p>
+            <p>Facebook: ฟะฮ์ .</p>
+        </div>
+
+        <!-- สมาชิกที่ 6 -->
+        <div class="team-member">
+            <img src="209.jpeg" alt="Member 6">
+            <h3>นางสาวนันนิสา เมืองแสน</h3>
+            <p>เบอร์โทร: 0628473300</p>
+            <p>อีเมล: 6540108209@nrru.ac.th</p>
+            <p>Line: waew120646</p>
+            <p>Facebook: Nns Wnanni</p>
+        </div>
+        <!-- สมาชิกที่ 9 -->
+        <div class="team-member">
+            <img src="210.jpg" alt="Member 9">
+            <h3>นางสาวบ่อบุญ พรหมชัย</h3>
+            <p>เบอร์โทร: 0834528164</p>
+            <p>อีเมล: 6540108210@nrru.ac.th</p>
+            <p>Line: 0830629465</p>
+            <p>Facebook: Bobun Promchai</p>
+        </div>
+
+        <!-- สมาชิกที่ 7 -->
+        <div class="team-member">
+            <img src="213.jpeg" alt="Member 7">
+            <h3>นางสาวศุจินธรา อัศวภูมิ</h3>
+            <p>เบอร์โทร: 0910601241</p>
+            <p>อีเมล: 6540108213@nrru.ac.th</p>
+            <p>Line: Yhad_yd</p>
+            <p>Facebook: Suchinthara Ussawapoom</p>
+        </div>
+
+        <!-- สมาชิกที่ 8 -->
+        <div class="team-member">
+            <img src="214.jpeg" alt="Member 8">
+            <h3>นางสาวสุธิชา ทองสา</h3>
+            <p>เบอร์โทร: 0618045375</p>
+            <p>อีเมล: 6540108214@nrru.ac.th</p>
+            <p>Line: sutciha</p>
+            <p>Facebook: Suticha Thongsa</p>
+        </div>
+         
+
+        <!-- สมาชิกที่ 10 -->
+        <div class="team-member">
+            <img src="215.jpeg" alt="Member 9">
+            <h3>นางสาวอนัญญา แซวประโคน</h3>
+            <p>เบอร์โทร: 0631164246</p>
+            <p>อีเมล: 6540108215@nrru.ac.th</p>
+            <p>Line: 0820216582</p>
+            <p>Facebook: Ananya Saewprakon</p>
+        </div>
+        
+    </div>
+    <div id="backToTop" onclick="scrollToTop()">
+        &#8679;
+    </div>
+    <script>
+        // แสดง/ซ่อนปุ่มเมื่อเลื่อนหน้า
+        window.addEventListener('scroll', function () {
+            const backToTopButton = document.getElementById('backToTop');
+            if (window.scrollY > 300) { // แสดงปุ่มเมื่อเลื่อนลงมากกว่า 300px
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+    
+        // ฟังก์ชันเลื่อนกลับด้านบน
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 ติดต่อเรา | พัฒนาโดยทีมงานของคุณ</p>
+    </footer>
+
+</body>
+</html>

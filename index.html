@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จรรยาบรรณ คุณธรรม จริยธรรมครู</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007ACC, #005A9C);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.5rem;
+        }
+
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            height: 60px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg, #005A9C, #003F6E);
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #007ACC;  /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์ */
+            transform: scale(1.1);  /* ขยายขนาดลิงก์ */
+        }
+        .carousel {
+            position: relative;
+            max-width: 1200px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 1.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+
+        .carousel-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        footer {
+            text-align: center;
+            background: linear-gradient(90deg, #007ACC, #005A9C);
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        nav a:hover {
+            background-color: #004f80;
+            transform: scale(1.1);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px; /* ขยายความกว้าง */
+    height: 70px; /* ขยายความสูง */
+    background-color: #007ACC;
+    color: #fff;
+    font-size: 30px; /* ขยายขนาดไอคอน */
+    text-align: center;
+    line-height: 70px; /* ทำให้ไอคอนอยู่ตรงกลาง */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    z-index: 9999;
+    }
+
+    #backToTop.show {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    #backToTop:hover {
+        background-color: #005A9C;
+    }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Nrru.png" alt="Logo">
+    <h1>จรรยาบรรณ คุณธรรม จริยธรรมครู</h1>
+</header>
+<div style="background-color: #f1e391; color: #333; height: 40px; position: relative; overflow: hidden; display: flex; align-items: center; padding: 0 20px;">
+    <div style="white-space: nowrap; position: absolute; animation: marquee 10s linear infinite;">
+        ประกาศ: ยินดีต้อนรับเข้าสู่เว็บไซต์จรรยาบรรณ คุณธรรม จริยธรรมครู
+    </div>
+</div>
+
+<style>
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<nav>
+    <a href="index.html"><i class="fas fa-home"></i> หน้าแรก</a>
+    <a href="teacher.html"><i class="fas fa-chalkboard-teacher"></i> จรรยาบรรณครู</a>
+    <a href="ethics.html"><i class="fas fa-book"></i> คุณธรรม จริยธรรมครู</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> ติดต่อเรา</a>
+</nav>
+
+    <div class="carousel-buttons">
+        <button onclick="prevSlide()">&#10094;</button>
+        <button onclick="nextSlide()">&#10095;</button>
+    </div>
+    <section class="carousel">
+        <div class="carousel-images" id="carouselImages">
+            <img src="Welcome.png" alt="Image 1">
+            <img src="Teacher.png" alt="Image 2">
+            <video width="1200" height="400" autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    
+<section style="margin: 20px auto; max-width: 1200px; display: flex; flex-wrap: wrap; gap: 20px;">
+    <div style="flex: 1; min-width: 250px; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+        <h2 style="color: #007ACC;">เกี่ยวกับเรา</h2>
+        <p>เว็บไซต์นี้มุ่งเน้นในการเผยแพร่ข้อมูลเกี่ยวกับจรรยาบรรณ คุณธรรม และจริยธรรมสำหรับครู เพื่อส่งเสริมความเข้าใจในวิชาชีพครู</p>
+    </div>
+    <div style="flex: 1; min-width: 250px; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+        <h2 style="color: #007ACC;">หัวข้อสำคัญ</h2>
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li>- จรรยาบรรณของครู</li>
+            <li>- คุณธรรมในการสอน</li>
+            <li>- จริยธรรมในการพัฒนาตนเอง</li>
+        </ul>
+    </div>
+    <div style="flex: 1; min-width: 250px; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+        <h2 style="color: #007ACC;">ติดต่อเรา</h2>
+        <p>หากคุณมีคำถามหรือข้อเสนอแนะ สามารถติดต่อเราผ่านช่องทาง:<br>Email: 6540108101@nrru.ac.th</p>
+        <!-- <p>Email: 6540108101@nrru.ac.th</p> -->
+    </div>
+    <div id="backToTop" onclick="scrollToTop()">
+        &#8679;
+    </div>
+    <script>
+        // แสดง/ซ่อนปุ่มเมื่อเลื่อนหน้า
+        window.addEventListener('scroll', function () {
+            const backToTopButton = document.getElementById('backToTop');
+            if (window.scrollY > 300) { // แสดงปุ่มเมื่อเลื่อนลงมากกว่า 300px
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+    
+        // ฟังก์ชันเลื่อนกลับด้านบน
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    
+    
+</section>
+<section style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <img src="Nrru.png" alt="Centered Image" style="max-width: 6%; height: 50%; margin-right: 5px;">
+    <img src="CED.png" alt="Logo ced" style="max-width: 10%; height: 60%;">
+</section>
+<section style="text-align: center;">
+    <p style="color: #2d2f31; margin-top: 5px;">มหาวิทยาลัยราชภัฎนครราชสีมา สาขาคอมพิวเตอร์ศึกษา</p>
+</section>
+
+<section style="text-align: center; margin: 40px 0;">
+    <h2>วิดีโอแนะนำ</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_6TnZlDOFtw?si=Jpf1przbekBMrL_b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 จรรยาบรรณคุณธรรม จริยธรรมครู | พัฒนาโดยทีมงานของคุณ<a style="color: #fff;" href="contact.html"> ติดต่อเรา</a></p>
+</footer>
+
+
+
+<script>
+    const images = document.getElementById('carouselImages');
+    const totalImages = images.children.length;
+    let index = 0;
+
+    function showSlide() {
+        images.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+        index = (index + 1) % totalImages;
+        showSlide();
+    }
+
+    function prevSlide() {
+        index = (index - 1 + totalImages) % totalImages;
+        showSlide();
+    }
+
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+</script>
+
+</body>
+</html>
